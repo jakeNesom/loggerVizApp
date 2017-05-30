@@ -1,5 +1,22 @@
 # LoggerVizApp
 
+- this is an Angular CLI version of my loggger app.  Switched to angular-cli from systemJS because of the built in production mode transpiling of angular-cli.  Shorter up-time to export this as a production version than writing my own GULP file
+
+# App technology features:
+- Angular 4
+- http Service to handle GET and POST services to retirieve documents from NodeJS / Express / MongoDB server
+- Multiple views where data is visualized using Angular2-HighCharts a HighCharts implementation
+- Twitter Bootstrap
+- Angular 2 Bootstrap 
+- Bootstrap Material Design theme
+- Angular Animations
+
+
+
+
+
+# Angular CLI notes:
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
