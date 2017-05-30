@@ -1,0 +1,39 @@
+ <div class="col-sm-7 col-lg-6">
+    <div class="panel panel-default panel-body" style="width:100%;" >
+ 
+                <chart style="display:inherit; height:95%;" [options]="options"
+                    (load)="saveInstance($event.context)">
+                </chart>
+ 
+        
+       
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="dropdown" style="display:inline;">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        {{range}}
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li *ngFor="let time of timeRangeArr; let i = index;" (click)="rangeChange(timeRangeArr[i])"><a href="#">{{time}} </a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <span id="toggleText" >Nodes</span>
+           
+                <label class="switch" style="top:11px; left: 40px;">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+        </div>
+      
+        
+    
+    </div> <!-- end of well -->
+    <!-- <div class="panel panel-default panel-body">{{ dataset | json}}</div> -->
+  </div> 
